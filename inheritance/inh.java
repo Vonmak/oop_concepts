@@ -1,14 +1,33 @@
 package inheritance;
 
+// Main class
+public class inh {
+    public static void main(String[] args) {
+        // Create instances of the subclasses
+        BullDog dog = new BullDog("Zoey");
+        Cat cat = new Cat("Putin");
+
+        // Using the setter method to change the name
+        dog.setName("Bosco");
+
+        // Call all methods on the instances
+        dog.guards();
+        dog.bark();
+        dog.eat();
+        cat.meow();
+        cat.eat();
+    }
+}
+
 // Base class (Animal)
 class Animal {
     protected String name;
 
-    public void setName(String name) {
+    public Animal(String name) {
         this.name = name;
     }
 
-    public Animal(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -49,24 +68,5 @@ class Cat extends Animal {
     // Additional method specific to Cat
     public void meow() {
         System.out.println(name + " says Meow!");
-    }
-}
-
-// Main class
-public class inh {
-    public static void main(String[] args) {
-        // Create instances of the subclasses
-        BullDog dog = new BullDog("Zoey");
-        Cat cat = new Cat("Putin");
-
-        // Using the setter method to change the name
-        dog.setName("Bosco");
-
-        // Call all methods on the instances
-        dog.guards();
-        dog.bark();
-        dog.eat();
-        cat.meow();
-        cat.eat();
     }
 }
