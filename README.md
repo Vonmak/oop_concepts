@@ -1,3 +1,5 @@
 # Object oriented Programming Concepts
 
-## Java, Python, PHP
+## Abstraction, Encapsulation, Inheritance, Polymorphism
+
+### Java, Python, PHP
